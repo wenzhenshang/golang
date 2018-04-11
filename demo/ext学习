@@ -6,3 +6,6 @@ https://www.jianshu.com/p/30a5d1924da3
 
 ext store 中表示 这个root（或rootProperty）是为了标示出来，接收到的JSON字符串从哪里开头解析，例如extjs代码是下边这样的的，
 后台反馈回来的JSON字符串就是必须有个'Items'这样才可以显示数据。
+
+rootProperty 属性告诉 store 从 JSON 文件中哪个地方查找记录，同时 totalProperty 属性让 store 知道从哪里读取记录总数。
+为了得到正确的结果，当你使用服务器分页时，需要指定 totalProperty 属性，因为这个值将用于分页工具栏
