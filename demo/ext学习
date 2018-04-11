@@ -3,3 +3,6 @@ ext js6的学习手册
 
 Sencha Cmd创建Ext JS示例项目
 https://www.jianshu.com/p/30a5d1924da3
+
+ext store 中表示 这个root（或rootProperty）是为了标示出来，接收到的JSON字符串从哪里开头解析，例如extjs代码是下边这样的的，
+后台反馈回来的JSON字符串就是必须有个'Items'这样才可以显示数据。
