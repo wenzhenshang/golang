@@ -1,1 +1,6 @@
-
+go工作目录在环境变量GOPATH配置
+bin
+pkg
+src----demo
+       ----hello.go
+go install
