@@ -13,3 +13,14 @@ https://studygolang.com/articles/2731
 
 go语言学习网站
 https://books.studygolang.com/gopl-zh/ch1/ch1-01.html
+
+1、指定变量类型，声明后若不赋值，使用默认值。
+
+ var v_name v_type
+ v_name = value
+2、根据值自行判定变量类型。
+
+ var v_name = value
+3、省略var, 注意 :=左侧的变量不应该是已经声明过的，否则会导致编译错误。
+
+ v_name := value
