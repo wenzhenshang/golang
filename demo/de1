@@ -24,3 +24,6 @@ https://books.studygolang.com/gopl-zh/ch1/ch1-01.html
 3、省略var, 注意 :=左侧的变量不应该是已经声明过的，否则会导致编译错误。
 
  v_name := value
+ 
+  //这种不带声明格式的只能在函数体中出现
+  //g, h := 123, "hello"
