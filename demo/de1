@@ -65,3 +65,26 @@ defer 语句会延迟函数的执行直到上层函数返回。延迟调用的�
 延迟的函数调用被压入一个栈中。当函数返回时， 会按照后进先出的顺序调用被延迟的函数调用。
 
 os.Args 表示接収输入值
+
+golang的输入接収
+//code
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
+
+func main() {
+
+	input := bufio.NewScanner(os.Stdin) //初始化一个扫表对象
+	for input.Scan() {                  //扫描输入内容
+		line := input.Text() //把输入内容转换为字符串
+		fmt.Println(line)    //输出到标准输出
+	}
+
+}
+//
+[ E:/go/workplace/src/hello/ ] # go build hello.go 
+生成 hello.exe ,打开hello.exe 输入要输的值，
