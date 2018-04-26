@@ -33,6 +33,15 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # source ~/.bashrc
 验证
+go version
+
+go install
+与build命令相比，install命令在编译源码后还会将可执行文件或库文件安装到约定的目录下。
+go install编译出的可执行文件以其所在目录名(DIR)命名
+
+go install将可执行文件安装到与src同级别的bin目录下，bin目录由go install自动创建
+
+go install将可执行文件依赖的各种package编译后，放在与src同级别的pkg目录下
 
 $ go version
  、、、、、、、、、
