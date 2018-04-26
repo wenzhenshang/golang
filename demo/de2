@@ -7,3 +7,32 @@ uintptr：用于指针运算，GC 不把 uintptr 当指针，uintptr 无法持�
 　　unsafe.Pointer 可以和 普通指针 进行相互转换。
 　　unsafe.Pointer 可以和 uintptr 进行相互转换。
 　　也就是说 unsafe.Pointer 是桥梁，可以让任意类型的指针实现相互转换，也可以将任意类型的指针转换为 uintptr 进行指针运算。
+  
+ ubuntn中go语言安装
+ 、、、、、、、、、
+ 对于64位的Linux
+
+ $ wget https://storage.googleapis.com/golang/go1.9.1.linux-amd64.tar.gz
+
+对于32位的Linux
+
+$ wget https://storage.googleapis.com/golang/go1.9.1.linux-386.tar.gz
+在/usr/local下安装程序
+
+$ sudo tar -xzf go1.9.1.linux-amd64.tar.gz -C /usr/local
+
+配置全局变量
+
+$ sudo gedit ~/.bashrc
+然后添加到你的.bashrc或者.zshrc
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+使修改生效
+
+# source ~/.bashrc
+验证
+
+$ go version
+ 、、、、、、、、、
