@@ -1,3 +1,5 @@
+
+navicat for mysql 错误 1251时：
 我的是8.0的版本，因为比较新的mysql采用新的保密方式所以旧的似乎不能用，改密码方式：
 use mysql；
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '你的密码';
